@@ -1,0 +1,73 @@
+{   
+    "config": {
+        "mint_private_key": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    },
+    "title": {
+        "card": "Geography test",
+        "options": [
+            "Start"
+        ]
+    },
+    "questions": [
+        {
+            "card": "What is the capital of France?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ]
+        },
+        {
+            "card": "What is the capital of Germany?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ]
+        },
+        {
+            "card": "What is the capital of Spain?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ]
+        },
+        {
+            "card": "What is the capital of England?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ]
+        }
+    ],
+    "results": [
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a moron!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "automint": false
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        }
+    ]
+}
