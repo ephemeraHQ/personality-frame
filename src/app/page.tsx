@@ -16,8 +16,8 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: "Dummy Frame",
-  description: "A bare bones frame",
+  title: "Personality Test",
+  description: "Discover yourself in frames",
   other: {
     ...frameMetadata,
   },
