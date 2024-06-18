@@ -51,6 +51,7 @@
             "card": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "../image/genius.png",
                 "automint": true
             },
             "options": [
@@ -62,6 +63,7 @@
             "card": "You are a moron!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "../image/moron.png",
                 "automint": false
             },
             "options": [
