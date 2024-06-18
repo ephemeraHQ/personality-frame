@@ -33,7 +33,14 @@ const getFrameResponse = async (question: Question | undefined, questionNumber: 
     isOpenFrame: true,
     accepts: {
       xmtp: "02-09-2024",
-    }
+    },
+    buttons: [
+      {
+        label: "View Minted NFT",
+        action: "link",
+        target: `https://testnets.opensea.io/${address}`
+      }
+    ]
   })
 };
 
