@@ -1,6 +1,6 @@
 {   
     "config": {
-        "mint_private_key": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+        "mint_private_key": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
     },
     "title": {
         "card": "Geography test",

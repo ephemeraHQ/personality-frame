@@ -1,10 +1,16 @@
+import { getOrCreateSurvey } from "@/helpers/game";
 import { ImageResponse } from "next/og";
-import template from "../template.json";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const question = parseInt(url.searchParams.get("q") ?? "0", 10);
-  const copy = template.questions[question].card;
+  const address = url.searchParams.get("address");
+  if (!address) {
+    return new Response("Address not found", { status: 500 });
+  }
+  const survey = await getOrCreateSurvey(address);
+  if (!survey) {
+    return new Response("Survey not found", { status: 500 });
+  }
   try {
     return new ImageResponse(
       (
@@ -12,8 +18,12 @@ export async function GET(request: Request) {
           <div tw="bg-gray-50 flex w-full">
             <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
               <h2 tw="flex flex-col text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 text-left">
-                {copy}
+                Results
               </h2>
+              <div tw="flex flex-col">
+                <p tw="text-gray-500 text-sm">Address: {address}</p>
+                <p tw="text-gray-500 text-sm">Results: {survey.answers.join(", ")}</p>
+              </div>
             </div>
           </div>
         </div>
