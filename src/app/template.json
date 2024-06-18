@@ -51,7 +51,103 @@
             "card": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "../image/genius.png",
+                "image_file": "./assets/result-1.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-2.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-3.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-4.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-5.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-6.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-7.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-8.png",
+                "automint": true
+            },
+            "options": [
+                "Share",
+                "Restart"
+            ]
+        },
+        {
+            "card": "You are a genius!",
+            "nft": {
+                "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
+                "image_file": "./assets/result-9.png",
                 "automint": true
             },
             "options": [
@@ -63,7 +159,7 @@
             "card": "You are a moron!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "../image/moron.png",
+                "image_file": "./assets/result-10.png",
                 "automint": false
             },
             "options": [
