@@ -7,7 +7,7 @@ const initialFrameMetadata = getFrameMetadata({
   isOpenFrame: true,
   buttons: [
     {
-      label: "Start test",
+      label: "Start",
       action: "post",
       target: `${process.env.NEXT_PUBLIC_BASE_URL}/survey`,
     },
