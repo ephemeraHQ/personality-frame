@@ -18,7 +18,6 @@ export async function GET(request: Request) {
           <div tw="flex flex-col text-2xl font-bold tracking-tight text-gray-900 justify-center relative z-10">
             {template.title.sub_text}
           </div>
-          
         </div>
       )
     );
