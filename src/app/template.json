@@ -10,7 +10,7 @@
     },
     "questions": [
         {
-            "card": "question1",
+            "card": "What is the capital of France?",
             "options": [
                 "Paris",
                 "London",
@@ -19,7 +19,7 @@
             ]
         },
         {
-            "card": "question2",
+            "card": "What is the capital of Germany?",
             "options": [
                 "Paris",
                 "London",
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "card": "question3",
+            "card": "What is the capital of Spain?",
             "options": [
                 "Paris",
                 "London",
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "card": "question4",
+            "card": "What is the capital of England?",
             "options": [
                 "Paris",
                 "London",
