@@ -8,15 +8,25 @@ export async function GET(request: Request) {
   try {
     return new ImageResponse(
       (
-        <div tw="flex flex-col w-full h-full justify-center items-center bg-white p-10">
-          {image && <div tw="flex flex-col mb-16 h-3/5 items-center">
-            <img
-              tw="h-full object-fit"
-              src={`${process.env.NEXT_PUBLIC_BASE_URL}/assets/${image}`}
-            />
-          </div>}
-          <div tw="flex flex-col text-4xl font-bold tracking-tight text-gray-900 items-center">
-            {text}
+        <div tw="flex flex-col w-full h-full justify-center items-center bg-white p-1">
+          <div tw="flex flex-row w-full shrink justify-center items-center bg-white">
+            {image && <div tw="flex flex-col m-1 h-[300px] items-center">
+              <img
+                tw="h-full object-fit m-0"
+                src={`${process.env.NEXT_PUBLIC_BASE_URL}/assets/${image}`}
+              />
+            </div>}
+            <div tw="flex flex-col text-6xl font-bold tracking-tight text-gray-900 m-0 justify-center items-center">
+              {text}
+            </div>
+          </div>
+          <div tw="flex flex-col grow w-full justify-center items-center bg-white p-1">
+          { template.questions[question].options.map((option, index) => (
+            <div tw="flex flex-col text-5xl font-bold tracking-tight text-gray-900 items-left w-full mt-3 mb-0" key={question}>
+              {String.fromCharCode(65 + index)}. {option}
+            </div>
+          ))
+          }
           </div>
         </div>
       )
