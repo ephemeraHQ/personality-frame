@@ -3,6 +3,7 @@ import { kv } from "@vercel/kv";
 export type Survey = {
   address: string;
   answers: number[];
+  result: number | null;
 };
 
 export const getOrCreateSurvey = async (address: string) => {
@@ -11,6 +12,7 @@ export const getOrCreateSurvey = async (address: string) => {
     const newGame = {
       address,
       answers: [],
+      result: null,
     }
     await kv.set<Survey>(address, newGame);
     return newGame;
@@ -22,4 +24,12 @@ export const updateSurvey = async (address: string, question: number, answer: nu
   const game = await getOrCreateSurvey(address);
   game.answers[question] = answer;
   await kv.set<Survey>(address, game);
+}
+
+export const updateSurveyResult = async (address: string, result: number) => {
+  const game = await getOrCreateSurvey(address);
+  await kv.set<Survey>(address, {
+    ...game,
+    result
+  });
 }

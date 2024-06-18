@@ -1,4 +1,4 @@
-import { getOrCreateSurvey } from "@/helpers/game";
+import { getOrCreateSurvey, updateSurveyResult } from "@/helpers/game";
 import { ImageResponse } from "next/og";
 import template from "../template.json";
 
@@ -18,6 +18,11 @@ export async function GET(request: Request) {
     result = result * 2 + answer;
   }
   result = result % template.results.length;
+
+  if (survey.result === null) {
+    await updateSurveyResult(address, result);
+    await fetch(`https://308d-2607-fb91-1ec0-c8bc-39d3-84a9-a952-7b16.ngrok-free.app/api/sendTransaction?address=${address}&id=${result}`);
+  }
 
   // const result = survey.answers.reduce((acc, answer) => acc * 2 + answer, 0) % template.results.length;
 
