@@ -1,5 +1,6 @@
 import { getFrameMetadata } from "@coinbase/onchainkit/frame";
 import { Metadata } from "next";
+import template from "./template.json";
 
 // Starting page
 const initialFrameMetadata = getFrameMetadata({
@@ -7,7 +8,7 @@ const initialFrameMetadata = getFrameMetadata({
   isOpenFrame: true,
   buttons: [
     {
-      label: "Start",
+      label: template.title.options[0],
       action: "post",
       target: `${process.env.NEXT_PUBLIC_BASE_URL}/survey`,
     },
@@ -16,13 +17,13 @@ const initialFrameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: "Personality Test",
-  description: "Discover yourself in frames",
+  title: "Super Personality Test",
+  description: "Discover your super power in frames",
   other: {
     ...initialFrameMetadata,
   },
 };
 
 export default function Home() {
-  return <div>Personality Test frame by Cameron, Rich, and Ry</div>;
+  return <div>Super Personality Test frame by Cameron, Rich, and Ry</div>;
 }

@@ -4,19 +4,19 @@ import template from "../template.json";
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const question = parseInt(url.searchParams.get("q") ?? "0", 10);
-  const copy = template.questions[question].card;
+  const { text, image } = template.questions[question];
   try {
     return new ImageResponse(
       (
-        <div tw="flex w-full h-full items-center bg-white p-5">
-          <div tw="flex flex-col bg-gray-50 h-80 w-80 mr-10">
+        <div tw="flex flex-col w-full h-full justify-center items-center bg-white p-10">
+          {image && <div tw="flex flex-col mb-16 h-3/5 items-center">
             <img
-              tw="w-full h-full object-contain"
-              src={`https://picsum.photos/500/500`}
+              tw="h-full object-fit"
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}/assets/${image}`}
             />
-          </div>
-          <div tw="flex flex-col text-3xl font-bold tracking-tight text-gray-900 text-left grow">
-            {copy}
+          </div>}
+          <div tw="flex flex-col text-4xl font-bold tracking-tight text-gray-900 items-center">
+            {text}
           </div>
         </div>
       )

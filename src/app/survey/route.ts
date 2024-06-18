@@ -5,7 +5,7 @@ import template from "../template.json";
 import { updateSurvey } from "@/helpers/game";
 
 type Question = {
-  card: string;
+  text: string;
   options: string[];
 };
 
