@@ -25,11 +25,11 @@ export async function GET(request: Request) {
     return new ImageResponse(
       (
         <div tw="flex flex-col w-full h-full justify-center items-center p-10 bg-white relative">
-          <div tw="flex flex-col mb-4 items-center text-xl">
-            Your superpower is...
-          </div>
-          <div tw="flex flex-col font-bold justify-center">
-            Result goes here...
+          <div tw="flex flex-col mb-16 h-full items-center overflow-hidden">
+            <img
+              tw="w-[580px] mt-[-1px]"
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}/assets/result-${result + 1}.png`}
+            />
           </div>
         </div>
       )
