@@ -3,55 +3,136 @@
         "mint_private_key": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
     },
     "title": {
-        "card": "Geography test",
+        "title_text": "What is your superpower?",
+        "sub_text": "Learn what powers you possess",
+        "image": "title.png",
+        "image_alignment": "background",
         "options": [
             "Start"
         ]
     },
     "questions": [
         {
-            "card": "What is the capital of France?",
+            "text": "It's a nice sunny morning, you wake up, yawn, roll over, and notice an envelope on your nightstand.",
+            "image": "question-1.png",
+            "image_alignment": "top",
             "options": [
-                "Paris",
-                "London",
-                "Berlin",
-                "Madrid"
+                "A letter? I wonder what it is. You open it with excitement",
+                "Hmm.. I wonder what this could be... You open it with caution",
             ]
         },
         {
-            "card": "What is the capital of Germany?",
+            "text": "Before you can open the envelope, it flips around and says “I've been waiting to meet you, hero.",
+            "image": "question-2.png",
+            "image_alignment": "top",
             "options": [
-                "Paris",
-                "London",
-                "Berlin",
-                "Madrid"
+                "I don't care if this is a dream or not I'm soooo ready for this.",
+                "Is this real? What is even going on??"
             ]
         },
         {
-            "card": "What is the capital of Spain?",
+            "text": "What are you waiting for hero? Are you ready to join us?",
+            "image": "question-3.png",
+            "image_alignment": "top",
             "options": [
-                "Paris",
-                "London",
-                "Berlin",
-                "Madrid"
+                "Hold on, I have to go to work, feed the cat, brush my teeth…",
+                "I have to tell my mom and my friends, wait…"
             ]
         },
         {
-            "card": "What is the capital of England?",
+            "text": "The envelope grabs your hand and brings you through a portal.",
+            "image": "question-4.png",
+            "image_alignment": "top",
             "options": [
-                "Paris",
-                "London",
-                "Berlin",
-                "Madrid"
+                "OMG, Where am I going? How is this even possible? I'm gonna get a headache from this.",
+                "No way! This is so cool!"
+            ]
+        },
+        {
+            "text": "You walk towards them and notice they are humanoid cats! They notice you and approach you asking if you need a guide. You agree and you choose:",
+            "image": "question-5.png",
+            "image_alignment": "top",
+            "options": [
+                "A chatty & friendly cat named Haru.",
+                "A silent and honest cat named Boo."
+            ]
+        },
+        {
+            "text": "As your guide is taking you around the town, you realize the city is pretty far. What transportation do you choose?",
+            "image": "question-6.png",
+            "image_alignment": "top",
+            "options": [
+                "A unicorn, I don't know how to ride one yet, but it looks fun and I'm sure I can figure it out.",
+                "The car, I know how to drive one and I can get to the city ASAP"
+            ]
+        },
+        {
+            "text": "You reach your destination and you see a garden and a castle, which one do you choose?",
+            "image": "question-7.png",
+            "image_alignment": "top",
+            "options": [
+                "The castle duh! I need to figure out what all this is about.",
+                "The garden, I wanna meet new friends and explore the beautiful land"
+            ]
+        },
+        {
+            "text": "After choosing, you look around a bit and end up seeing a troll. What do you do?",
+            "image": "question-8.png",
+            "image_alignment": "top",
+            "options": [
+                "Approach him and demand him to tell you where to go",
+                "Kindly ask him where you should be headed and take your time chatting with him."
+            ]
+        },
+        {
+            "text": "The troll tells you that you must enter through a cave to find what you are looking for.",
+            "image": "question-9.png",
+            "image_alignment": "top",
+            "options": [
+                "I can't wait to see what's waiting there for me, perhaps a magic sword?",
+                "A cave? Is there no other way?"
+            ]
+        },
+        {
+            "text": "You start going down the cave and see a sleeping bear, with what seems to be a glowing scroll, what do you do?",
+            "image": "question-10.png",
+            "image_alignment": "top",
+            "options": [
+                "Take the scroll as quietly as I can and book it.",
+                "Take some time to figure out the best possible solution to take the scroll without getting hurt"
+            ]
+        },
+        {
+            "text": "Before you make your move, the bear wakes up and growls at your presence. What are you doing?",
+            "image": "question-11.png",
+            "image_alignment": "top",
+            "options": [
+                "Running and fighting",
+                "The bear is kind of cute, I will try my best to reason with it."
+            ]
+        },
+        {
+            "text": "You wake up in your bed. You look around and see that the envelope is in your hand.",
+            "image": "question-12.png",
+            "image_alignment": "top",
+            "options": [
+                "That had to be a dream right? I'm glad I'm out of it.",
+                "OMG, I'm glad I'm back, I wonder what the envelope says…"
+            ]
+        },
+        {
+            "text": "You open the envelope...",
+            "options": [
+                "Continue"
             ]
         }
     ],
     "results": [
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-1.png",
+                "image_file": "result-1.png",
                 "automint": true
             },
             "options": [
@@ -60,10 +141,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-2.png",
+                "image_file": "result-2.png",
                 "automint": true
             },
             "options": [
@@ -72,10 +153,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-3.png",
+                "image_file": "result-3.png",
                 "automint": true
             },
             "options": [
@@ -84,10 +165,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-4.png",
+                "image_file": "result-4.png",
                 "automint": true
             },
             "options": [
@@ -96,10 +177,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-5.png",
+                "image_file": "result-5.png",
                 "automint": true
             },
             "options": [
@@ -108,10 +189,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-6.png",
+                "image_file": "result-6.png",
                 "automint": true
             },
             "options": [
@@ -120,10 +201,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-7.png",
+                "image_file": "result-7.png",
                 "automint": true
             },
             "options": [
@@ -132,10 +213,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-8.png",
+                "image_file": "result-8.png",
                 "automint": true
             },
             "options": [
@@ -144,10 +225,10 @@
             ]
         },
         {
-            "card": "You are a genius!",
+            "text": "You are a genius!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-9.png",
+                "image_file": "result-9.png",
                 "automint": true
             },
             "options": [
@@ -156,10 +237,10 @@
             ]
         },
         {
-            "card": "You are a moron!",
+            "text": "You are a moron!",
             "nft": {
                 "mint_url": "https://opensea.io/?mint=0x1234567890abcdef1234567890abcdef12345678",
-                "image_file": "./assets/result-10.png",
+                "image_file": "result-10.png",
                 "automint": false
             },
             "options": [
